@@ -2,3 +2,4 @@
 - name: restart memcached
   service: name=memcached state=restarted
   when: not memcached_install.changed
+  tags: skip_ansible_lint
